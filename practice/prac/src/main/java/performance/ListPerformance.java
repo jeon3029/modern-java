@@ -16,17 +16,17 @@ public class ListPerformance {
     final int TestCaseNum = 100000;
     final int IteratorNumber = 100;
   
-    PerformanceTester.calcPerformance(() -> extracted1(list), TestCaseNum, IteratorNumber);
+    PerformanceTester.calcPerformance(() -> forEachLoops(list), TestCaseNum, IteratorNumber);
   
-    PerformanceTester.calcPerformance(() -> extracted2(list), TestCaseNum, IteratorNumber);
+    PerformanceTester.calcPerformance(() -> traditionalForLoops(list), TestCaseNum, IteratorNumber);
   }
 
-  private static void extracted1(List<Integer> list) {
+  private static void forEachLoops(List<Integer> list) {
     for (Integer integer : list) {
       integer++;
     }
   }
-  private static void extracted2(List<Integer> list) {
+  private static void traditionalForLoops(List<Integer> list) {
     for (int i = 0, size = list.size(); i < size; i++) {
       Integer integer = list.get(i);
       integer++;
