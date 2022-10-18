@@ -132,9 +132,11 @@ public class Filtering {
 		return apple.getWeight() > 150;
 	}
 
-	private interface Predicate<T>{
+	@FunctionalInterface
+  private interface Predicate<T>{
 		boolean test(T t);
 	}
+  
 	private static List<Apple> filterApples(List<Apple> inventory, Predicate<Apple> p) {
 		List<Apple> result = new ArrayList<>();
 		inventory.forEach(apple->{

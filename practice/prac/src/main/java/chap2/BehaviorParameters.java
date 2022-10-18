@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 public class BehaviorParameters {
 	// 리스트의 모든 요소에 대해 특정 동작 수행
 	// 리스트관련 작업 수행 후 다른 동작 수행
-	// 리스트 에러 방생시 정해진 다른 동작 수행
+	// 리스트 에러 발생시 정해진 다른 동작 수행
 	static List<Apple> inventory = Arrays.asList(
 			new Apple(80, Color.GREEN),
 			new Apple(155, Color.GREEN),
@@ -48,10 +48,7 @@ public class BehaviorParameters {
 		System.out.println(fil2);
 
 		comparator();
-
 		runnable();
-
-
 		callable();
 	}
 
@@ -139,7 +136,8 @@ public class BehaviorParameters {
 		GREEN
 	}
 
-	public interface ApplePredicate{
+	@FunctionalInterface
+  public interface ApplePredicate{
 		boolean test(Apple apple);
 	}
 	public static class AppleCustomFilterPredicate implements ApplePredicate{
