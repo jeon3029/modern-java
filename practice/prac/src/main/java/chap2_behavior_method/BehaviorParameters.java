@@ -1,4 +1,4 @@
-package chap2;
+package chap2_behavior_method;
 
 import java.util.*;
 import java.util.concurrent.Callable;
