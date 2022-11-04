@@ -1,0 +1,189 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/Users/user/Documents/p_workspace/modern-java/sample/ModernJavaInAction-master/target/benchmarks.jar) to field java.io.Console.cs
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.21
+# VM version: JDK 11.0.17, OpenJDK 64-Bit Server VM, 11.0.17+8
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Warmup: 3 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: modernjavainaction.chap07.ParallelStreamBenchmark.iterativeSum
+
+# Run progress: 0.00% complete, ETA 00:08:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 6.369 ms/op
+# Warmup Iteration   2: 5.968 ms/op
+# Warmup Iteration   3: 5.991 ms/op
+Iteration   1: 6.135 ms/op
+Iteration   2: 5.995 ms/op
+
+# Run progress: 10.00% complete, ETA 00:07:35
+# Fork: 2 of 2
+# Warmup Iteration   1: 6.002 ms/op
+# Warmup Iteration   2: 6.076 ms/op
+# Warmup Iteration   3: 6.250 ms/op
+Iteration   1: 6.059 ms/op
+Iteration   2: 6.026 ms/op
+
+
+Result "modernjavainaction.chap07.ParallelStreamBenchmark.iterativeSum":
+  6.054 ±(99.9%) 0.388 ms/op [Average]
+  (min, avg, max) = (5.995, 6.054, 6.135), stdev = 0.060
+  CI (99.9%): [5.666, 6.442] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.17, OpenJDK 64-Bit Server VM, 11.0.17+8
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Warmup: 3 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: modernjavainaction.chap07.ParallelStreamBenchmark.parallelRangedSum
+
+# Run progress: 20.00% complete, ETA 00:06:44
+# Fork: 1 of 2
+# Warmup Iteration   1: 1.536 ms/op
+# Warmup Iteration   2: 1.542 ms/op
+# Warmup Iteration   3: 1.410 ms/op
+Iteration   1: 1.447 ms/op
+Iteration   2: 1.455 ms/op
+
+# Run progress: 30.00% complete, ETA 00:05:53
+# Fork: 2 of 2
+# Warmup Iteration   1: 1.582 ms/op
+# Warmup Iteration   2: 1.403 ms/op
+# Warmup Iteration   3: 1.464 ms/op
+Iteration   1: 1.377 ms/op
+Iteration   2: 1.391 ms/op
+
+
+Result "modernjavainaction.chap07.ParallelStreamBenchmark.parallelRangedSum":
+  1.418 ±(99.9%) 0.254 ms/op [Average]
+  (min, avg, max) = (1.377, 1.418, 1.455), stdev = 0.039
+  CI (99.9%): [1.164, 1.672] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.17, OpenJDK 64-Bit Server VM, 11.0.17+8
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Warmup: 3 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: modernjavainaction.chap07.ParallelStreamBenchmark.parallelSum
+
+# Run progress: 40.00% complete, ETA 00:05:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 165.316 ms/op
+# Warmup Iteration   2: 126.919 ms/op
+# Warmup Iteration   3: 122.681 ms/op
+Iteration   1: 124.384 ms/op
+Iteration   2: 120.609 ms/op
+
+# Run progress: 50.00% complete, ETA 00:04:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 149.181 ms/op
+# Warmup Iteration   2: 128.836 ms/op
+# Warmup Iteration   3: 121.257 ms/op
+Iteration   1: 126.044 ms/op
+Iteration   2: 123.399 ms/op
+
+
+Result "modernjavainaction.chap07.ParallelStreamBenchmark.parallelSum":
+  123.609 ±(99.9%) 14.724 ms/op [Average]
+  (min, avg, max) = (120.609, 123.609, 126.044), stdev = 2.279
+  CI (99.9%): [108.885, 138.333] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.17, OpenJDK 64-Bit Server VM, 11.0.17+8
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Warmup: 3 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: modernjavainaction.chap07.ParallelStreamBenchmark.rangedSum
+
+# Run progress: 60.00% complete, ETA 00:03:22
+# Fork: 1 of 2
+# Warmup Iteration   1: 8.321 ms/op
+# Warmup Iteration   2: 8.094 ms/op
+# Warmup Iteration   3: 8.137 ms/op
+Iteration   1: 7.981 ms/op
+Iteration   2: 8.071 ms/op
+
+# Run progress: 70.00% complete, ETA 00:02:32
+# Fork: 2 of 2
+# Warmup Iteration   1: 8.533 ms/op
+# Warmup Iteration   2: 8.255 ms/op
+# Warmup Iteration   3: 8.077 ms/op
+Iteration   1: 8.054 ms/op
+Iteration   2: 8.129 ms/op
+
+
+Result "modernjavainaction.chap07.ParallelStreamBenchmark.rangedSum":
+  8.059 ±(99.9%) 0.392 ms/op [Average]
+  (min, avg, max) = (7.981, 8.059, 8.129), stdev = 0.061
+  CI (99.9%): [7.666, 8.451] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 11.0.17, OpenJDK 64-Bit Server VM, 11.0.17+8
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Warmup: 3 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: modernjavainaction.chap07.ParallelStreamBenchmark.sequentialSum
+
+# Run progress: 80.00% complete, ETA 00:01:41
+# Fork: 1 of 2
+# Warmup Iteration   1: 154.568 ms/op
+# Warmup Iteration   2: 152.126 ms/op
+# Warmup Iteration   3: 143.555 ms/op
+Iteration   1: 149.409 ms/op
+Iteration   2: 141.101 ms/op
+
+# Run progress: 90.00% complete, ETA 00:00:50
+# Fork: 2 of 2
+# Warmup Iteration   1: 146.965 ms/op
+# Warmup Iteration   2: 147.255 ms/op
+# Warmup Iteration   3: 147.239 ms/op
+Iteration   1: 150.699 ms/op
+Iteration   2: 148.067 ms/op
+
+
+Result "modernjavainaction.chap07.ParallelStreamBenchmark.sequentialSum":
+  147.319 ±(99.9%) 27.673 ms/op [Average]
+  (min, avg, max) = (141.101, 147.319, 150.699), stdev = 4.282
+  CI (99.9%): [119.646, 174.992] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:08:27
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                  Mode  Cnt    Score    Error  Units
+ParallelStreamBenchmark.iterativeSum       avgt    4    6.054 ±  0.388  ms/op
+ParallelStreamBenchmark.parallelRangedSum  avgt    4    1.418 ±  0.254  ms/op
+ParallelStreamBenchmark.parallelSum        avgt    4  123.609 ± 14.724  ms/op
+ParallelStreamBenchmark.rangedSum          avgt    4    8.059 ±  0.392  ms/op
+ParallelStreamBenchmark.sequentialSum      avgt    4  147.319 ± 27.673  ms/op
