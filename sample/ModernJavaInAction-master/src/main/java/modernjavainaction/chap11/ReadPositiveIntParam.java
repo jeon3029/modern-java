@@ -1,7 +1,5 @@
 package modernjavainaction.chap11;
 
-import static java.util.Optional.empty;
-import static java.util.Optional.of;
 import static java.util.Optional.ofNullable;
 import static org.junit.Assert.assertEquals;
 
@@ -51,9 +49,9 @@ public class ReadPositiveIntParam {
 
   public static Optional<Integer> s2i(String s) {
     try {
-      return of(Integer.parseInt(s));
+      return Optional.of(Integer.parseInt(s));
     } catch (NumberFormatException e) {
-      return empty();
+      return Optional.empty();
     }
   }
 
